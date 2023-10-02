@@ -25,6 +25,9 @@
           <a href="#CSS Background"><li>CSS Background</li></a>
           <a href="#CSS Border"><li>CSS Border</li></a>
           <a href="#CSS border-radius property"><li>CSS border-radius property</li></a>
+          <a href="#CSS border-collapse property"><li>CSS border-collapse property</li>
+           <a href="#CSS border-spacing property"><li>CSS border-spacing property</li></a>
+          </a>
         </ul>
       </nav>
     </header>
@@ -449,7 +452,310 @@ background-position: center;
           <br>
          <b>percentage:</b>  It denotes the size of the radius in percentage. It also does not allow negative values.</p>
       </section>
+      <section id="CSS border-collapse property">
+        <h2>CSS border-collapse property</h2>
+        <p>This CSS property is used to set the border of the table cells and specifies whether the table cells share the separate or common border.<br>
 
+          This property has two main values that are separate and collapse. When it is set to the value separate, the distance between the cells can be defined using the border-spacing property. When the border-collapse is set to the value collapse, then the inset value of border-style property behaves like groove, and the outset value behaves like ridge.
+         <br> 
+          <b>Syntax :-</b>
+          "border-collapse: separate | collapse | initial | inherit;"<br>  
+          The values of this CSS property are defined as follows.
+          
+        <b><u>  Property Values:</u></b>
+         1. separate: It is the default value that separates the border of the table cell. Using this value, each cell will display its own border.
+          
+         2.collapse: This value is used to collapse the borders into a single border. Using this, two adjacent table cells will share a border. When this value is applied, the border-spacing property does not affect.
+          
+         3.initial: It sets the property to its default value.
+          
+         4.inherit: It inherits the property from its parent element.
+          
+          Now, let's understand this CSS property by using some examples. In the first example, we are using the separate value of the border-collapse property. In the second example, we are using the collapse value of the border-collapse property.
+          <br>
+          Example - Using separate value
+          With this value, we can use the border-spacing property to set the distance between the adjacent table cells.
+          <pre>
+            <b> <script type="text/plain" style="display:block;">
+          <!DOCTYPE html>  
+          <html>  
+            
+          <head>  
+          <title> border-collapse property </title>  
+          <style>  
+          table{  
+          border: 2px solid blue;  
+          text-align: center;  
+          font-size: 20px;  
+          width: 80%;  
+          height: 50%;  
+          }  
+          th{  
+          border: 5px solid red;  
+          background-color: yellow;  
+          }  
+          td{  
+          border: 5px solid violet;  
+          background-color: cyan;  
+          }  
+          #t1 {  
+          border-collapse: separate;  
+          }  
+          </style>  
+          </head>  
+            
+          <body>  
+            
+          <h1> The border-collapse Property </h1>  
+          <h2> border-collapse: separate; </h2>  
+          <table id = "t1">  
+          <tr>  
+          <th> First_Name </th>  
+          <th> Last_Name </th>  
+          <th> Subject </th>  
+          <th> Marks </th>  
+          </tr>  
+          <tr>  
+          <td> James </td>  
+          <td> Gosling </td>  
+          <td> Maths </td>  
+          <td> 92 </td>  
+          </tr>  
+          <tr>  
+          <td> Alan </td>  
+          <td> Rickman </td>  
+          <td> Maths </td>  
+          <td> 89 </td>  
+          </tr>  
+          <tr>  
+          <td> Sam </td>  
+          <td> Mendes </td>  
+          <td> Maths </td>  
+          <td> 82 </td>  
+          </tr>  
+          </table>  
+          </body>  
+            
+          </html>  
+        </script></pre></b><br>
+          <u>Output :</u>
+          CSS border-collapse property<br>
+          Example - Using collapse property
+          The border-spacing and border-radius properties cannot be used with this value.
+          <pre>
+            <b> <script type="text/plain" style="display:block;">
+          <!DOCTYPE html>  
+          <html>  
+            
+          <head>  
+          <title> border-collapse property </title>  
+          <style>  
+          table{  
+          border: 2px solid blue;  
+          text-align: center;  
+          font-size: 20px;  
+          width: 80%;  
+          height: 50%;  
+          }  
+          th{  
+          border: 5px solid red;  
+          background-color: yellow;  
+          }  
+          td{  
+          border: 5px solid violet;  
+          background-color: cyan;  
+          }  
+          #t1{  
+          border-collapse: collapse;  
+          }  
+          </style>  
+          </head>  
+            
+          <body>  
+            
+          <h1> The border-collapse Property </h1>  
+          <h2> border-collapse: collapse; </h2>  
+          <table id = "t1">  
+          <tr>  
+          <th> First_Name </th>  
+          <th> Last_Name </th>  
+          <th> Subject </th>  
+          <th> Marks </th>  
+          </tr>  
+          <tr>  
+          <td> James </td>  
+          <td> Gosling </td>  
+          <td> Maths </td>  
+          <td> 92 </td>  
+          </tr>  
+          <tr>  
+          <td> Alan </td>  
+          <td> Rickman </td>  
+          <td> Maths </td>  
+          <td> 89 </td>  
+          </tr>  
+          <tr>  
+          <td> Sam </td>  
+          <td> Mendes </td>  
+          <td> Maths </td>  
+          <td> 82 </td>  
+          </tr>  
+          </table>  
+          </body>  
+          </html>
+        </script></b></pre></p>
+      </section>
+      <section id="CSS border-spacing property">
+        <h2>CSS border-spacing property</h2>
+        <p>This CSS property is used to set the distance between the borders of the adjacent cells in the table. It applies only when the border-collapse property is set to separate. There will not be any space between the borders if the border-collapse is set to collapse.
+
+          It can be defined as one or two values for determining the vertical and horizontal spacing.
+          
+         <li> When only one value is specified, then it sets both horizontal and vertical spacing.</li>
+          <li>When we use the two-value syntax, then the first one is used to set the horizontal spacing (i.e., the space between the adjacent columns), and the second value sets the vertical spacing (i.e., the space between the adjacent rows).</li>
+          <b><u>Syntax :-</u></b>
+          border-spacing: length | initial | inherit;  <br>
+          <b>        Property Values</b><br>
+          The values of this CSS property are defined as follows.<br>
+          
+          <li>length: This value sets the distance between the borders of the adjacent table cells in px, cm, pt, etc. Negative values are not allowed.<br>
+          </li>
+          <li>initial: It sets the property to its default value.<br>
+          </li>
+          <li>inherit: It inherits the property from its parent element.<br>
+          </li>
+          Let's understand this CSS property by using some examples. In the first example, we are using the single value of the border-spacing property, and in the second example, we are using two values of the border-spacing property.<br>
+          
+          <b>Example:</b>
+          Here, we are using the single value of the border-spacing property. The border-collapse property is set to separate, and the value of the border-spacing is set to 45px.<br>
+          <pre>
+            <b> <script type="text/plain" style="display:block;">
+              <!DOCTYPE html>  
+<html>  
+  
+<head>  
+<title> border-spacing property </title>  
+<style>  
+table{  
+border: 2px solid blue;  
+text-align: center;  
+font-size: 20px;  
+background-color: lightgreen;  
+}  
+th{  
+border: 5px solid red;  
+background-color: yellow;  
+}  
+td{  
+border: 5px solid violet;  
+background-color: cyan;  
+}  
+#space{  
+border-collapse: separate;  
+border-spacing: 45px;  
+}  
+</style>  
+</head>  
+  
+<body>  
+  
+<h1> The border-spacing Property </h1>  
+<h2> border-spacing: 45px; </h2>  
+<table id = "space">  
+<tr>  
+<th> First_Name </th>  
+<th> Last_Name </th>  
+<th> Subject </th>  
+<th> Marks </th>  
+</tr>  
+<tr>  
+<td> James </td>  
+<td> Gosling </td>  
+<td> Maths </td>  
+<td> 92 </td>  
+</tr>  
+<tr>  
+<td> Alan </td>  
+<td> Rickman </td>  
+<td> Maths </td>  
+<td> 89 </td>  
+</tr>  
+<tr>  
+<td> Sam </td>  
+<td> Mendes </td>  
+<td> Maths </td>  
+<td> 82 </td>  
+</tr>  
+</table>  
+</body>  
+  
+</html>  </script></b></pre>
+<b>Example</b>
+Here, we are using two values of the border-spacing property. The border-collapse property is set to separate, and the value of the border-spacing is set to 20pt 1em. The first value, i.e., 20pt sets the horizontal spacing, and the value 1em set the vertical spacing.<br>
+<pre>
+  <b> <script type="text/plain" style="display:block;">
+    <!DOCTYPE html>  
+<html>  
+  
+<head>  
+<title> border-spacing property </title>  
+<style>  
+table{  
+border: 2px solid blue;  
+text-align: center;  
+font-size: 20px;  
+background-color: lightgreen;  
+}  
+th{  
+border: 5px solid red;  
+background-color: yellow;  
+}  
+td{  
+border: 5px solid violet;  
+background-color: cyan;  
+}  
+#space{  
+border-collapse: separate;  
+border-spacing: 20pt 1em;  
+}  
+</style>  
+</head>  
+  
+<body>  
+  
+<h1> The border-spacing Property </h1>  
+<h2> border-spacing: 20pt 1em; </h2>  
+<table id = "space">  
+<tr>  
+<th> First_Name </th>  
+<th> Last_Name </th>  
+<th> Subject </th>  
+<th> Marks </th>  
+</tr>  
+<tr>  
+<td> James </td>  
+<td> Gosling </td>  
+<td> Maths </td>  
+<td> 92 </td>  
+</tr>  
+<tr>  
+<td> Alan </td>  
+<td> Rickman </td>  
+<td> Maths </td>  
+<td> 89 </td>  
+</tr>  
+<tr>  
+<td> Sam </td>  
+<td> Mendes </td>  
+<td> Maths </td>  
+<td> 82 </td>  
+</tr>  
+</table>  
+</body>  
+  
+</html>  </script></b></pre>
+        </p>
+</section>
     </main>
   </body>
 </html>
