@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>CSS Documentation</h1>
+        <ul>
+          <a href="#Introduction"><li>CSS Introduction</li></a>
+          <a href="#What_Is_CSS"><li>What Is CSS</li></a>
+          <a href="#CSS Syntax"><li>CSS Syntax</li></a>
+          <a href="#CSS Selector"><li>CSS Selector</li></a>
+          <a href="#How to add CSS"><li>How to add CSS</li></a>
+          <a href="#Inline CSS"><li>Inline CSS</li></a>
+          <a href="#Internal CSS"><li>Internal CSS</li></a>
+          <a href="#External CSS"><li>External CSS</li></a>
+          <a href="#CSS Comments"><li>CSS Comments</li></a>
+          <a href="#CSS Background"><li>CSS Background</li></a>
+          <a href="#CSS Border"><li>CSS Border</li></a>
+          <a href="#CSS border-radius property"><li>CSS border-radius property</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Introduction">
+        <h2>Introduction</h2>
+        <article>
+          <p>
+            CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL.
+CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and user interfaces for many mobile applications.
+          </p>
+          <p>
+          <b> What does CSS do </b>
+            You can add new looks to your old HTML documents.
+            You can completely change the look of your website with only a few changes in CSS code.
+            
+          </p>
+        </article>
+      </section>
+      <section id="What_Is_CSS">
+        <h2>"#What_Is_CSS"</h2>
+        <article>
+          <p>These are the three major benefits of CSS:</p>
+
+          <ul>
+            <li>
+               <b> 1-Solves a big problem:</b>
+               Before CSS, tags like font, color, background style, element alignments, border and size had to be repeated on every web page. This was a very long process. For example: If you are developing a large website where fonts and color information are added on every single page, it will be become a long and expensive process. CSS was created to solve this problem.   
+            </li>
+
+            <li><b>2-Saves a lot of time</b>
+                CSS style definitions are saved in external CSS files so it is possible to change the entire website by changing just one file.</li>
+            <li><b>3-Provide more attributes</b>
+                CSS provides more detailed attributes than plain HTML to define the look and feel of the website.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="CSS Syntax">
+        <h2>CSS Syntax</h2>
+        <article>
+          <p>A CSS rule set contains a selector and a declaration block.
+             <img src="css-syntax.png" alt="image">
+             <br>
+            <b>Selector:</b> Selector indicates the HTML element you want to style. It could be any tag like "h1","title" etc.<br>
+
+
+             <b>Declaration Block:</b> declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations:
+                
+               1. color: yellow;
+               2. font-size: 11 px;
+                Each declaration contains a property name and value, separated by a colon.<br>
+                
+              <b>Property:</b>
+               A Property is a type of attribute of HTML element. It could be color, border etc.<br>
+                
+                <b>Value:</b> Values are assigned to CSS properties. In the above example, value "yellow" is assigned to color property.
+              <br><b> Synatax</b>-{Property1:Value1;Property2:Value2;......;}
+          </p>
+        </article>
+      </section>
+      <section id="CSS Selector">
+        <h2>CSS Selector</h2>
+        <article>
+            CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.<br>
+          <p><b>There are several different types of selectors in CSS</b>
+           <li>CSS Element Selector</li>
+           <li>CSS Id Selector</li>
+           <li>CSS Class Selector</li>
+           <li>CSS Universal Selector</li>
+           <li>CSS Group Selector</li>
+
+        <h3>CSS Element Selector</h3>
+          A CSS element selector is a pattern used to select the HTML element(s) you want to style. It is the first part of a CSS rule, and is followed by the CSS properties that you want to apply to the selected element(s).
+        <h3>CSS Id Selector</h3>
+        The CSS ID selector is used to select an element based on its unique ID attribute. The ID attribute is a special attribute that can be assigned to any HTML element. It must be unique within the page, meaning that no two elements can have the same ID.
+
+To use the ID selector, you write a hash (#) character, followed by the ID of the element. For example, the following CSS rule will select the element with the ID my-element and apply the CSS property color: red to it.
+        <h3>CSS ID Selector</h3> 
+        The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single, unique element.
+It is written with the hash character (#), followed by the id of the element.       
+<h3>CSS Class Selector</h3>
+        The class selector selects HTML elements with a specific class attribute. It is used with a period character . (full stop symbol) followed by the class name.
+        The CSS class selector is used to select one or more elements based on their class attribute. The class attribute is a special attribute that can be assigned to any HTML element. An element can have multiple classes, and multiple elements can have the same class.
+To use the class selector, you write a period (.) character, followed by the name of the class. For example, the following CSS rule will select all elements with the class my-class and apply the CSS property color: red to them.
+CSS
+        <h3>CSS Universal Selector</h3>
+        The universal selector is used as a wildcard character. It selects all the elements on the pages.
+        The CSS universal selector is a special selector that matches any type of element. It is represented by an asterisk (*).
+
+The universal selector can be used to select all elements on a page, or all elements within a specific element. For example, the following CSS rule will select all elements on the page and apply the CSS property color: red to them.
+        <h3>CSS Group Selector</h3>
+        The grouping selector is used to select all the elements with the same style definitions.
+Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.
+        The CSS group selector is used to select multiple elements and style them together. It is formed by separating two or more CSS selectors with a comma. For example, the following CSS rule will select all #p and #div elements on the page and apply the CSS property color: red to them.    
+        </p>
+        </article>
+      </section>
+      <section id="How to add CSS">
+        <h2>How to add CSS</h2>
+        <article>
+          <p>CSS is added to HTML pages to format the document according to information in the style sheet. There are three ways to insert CSS in HTML documents.</p>
+          <li>Inline CSS</li>
+          <li>Internal CSS</li>
+          <li>External CSS</li>
+          <h3>Inline CSS</h3>
+          Inline CSS is used to apply CSS on a single line or element. <br>
+         <b>For example:
+          p style="color:blue">Hello CSS</b>
+
+        <h3>Internal CSS</h3>
+        Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.
+        <br><b>For example-style>  
+            p{color:blue}  
+            style></b>
+
+        <h3>External CSS</h3>
+        Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.<br>
+      <b>for example  - P{color:blue}</b>
+
+        You need to link this style.css file to your html pages like this: <br>
+
+      <b>link rel="stylesheet" type="text/css" href="style.css">  </b>
+       The link tag must be used inside head section of html.
+         </p>
+        </article>
+      </section>
+      <section id="Inline CSS">
+        <h2>Inline CSS</h2>
+        <article>
+          <p>We can apply CSS in a single element by inline CSS technique.
+            The inline CSS is also a method to insert style sheets in HTML document. This method mitigates some advantages of style sheets so it is advised to use this method sparingly.
+            If you want to use inline CSS, you should use the style attribute to the relevant tag.
+            <pre>
+            <b> <script type="text/plain" style="display:block;"> <htmltag style="cssproperty1:value; cssproperty2:value;"> </htmltag>
+              </script></b>
+              </pre> 
+              Example:
+              <pre>
+                <b> <script type="text/plain" style="display:block;"><h2 style="color:red;margin-left:40px;">Inline CSS is applied on this heading.</h2>  
+                  <p>This paragraph is not affected.</p>  </script></b></pre>
+                  <u>Output :</u>
+                  <p style="color: red;"> Inline CSS is applied on this heading. </p>
+                 This paragraph is not affected.
+            <h3><b><U>Disadvantages of Inline CSS</U></b></h3>
+            <ul>1.You cannot use quotations within inline CSS. If you use quotations the browser will interpret this as an end of your style value.</ul>
+            <ul>2.These styles cannot be reused anywhere else.</ul>
+            <ul>3.These styles are tough to be edited because they are not stored at a single place.</ul>
+            <ul>4.It is not possible to style pseudo-codes and pseudo-classes with inline CSS.</ul>
+            <ul>5.Inline CSS does not provide browser cache advantages.</ul>
+          </p>
+        </article>
+      </section>
+      <section id="Internal CSS">
+        <h2>Internal CSS</h2>
+        <article>
+          <p>The internal style sheet is used to add a unique style for a single document. It is defined in "head" section of the HTML page inside the "style" tag.
+            <div class="code-container">
+              <pre>
+                <b>
+                  &lt;!DOCTYPE html&gt;  
+                  &lt;html&gt;  
+                  &lt;head&gt;  
+                  &lt;style&gt;  
+                  body {  
+                      background-color: linen;  
+                  }  
+                  h1 {  
+                      color: red;  
+                      margin-left: 80px;  
+                  }   
+                  &lt;/style&gt;  
+                  &lt;/head&gt;  
+                  &lt;body&gt;  
+                  &lt;h1&gt;The internal style sheet is applied on this heading.&lt;/h1&gt;  
+                  &lt;p&gt;This paragraph will not be affected.&lt;/p&gt;  
+                  &lt;/body&gt;  
+                  &lt;/html&gt; 
+                  </b></pre>
+             </div>
+          </p>
+        </article>
+      </section>
+       <section id="External CSS">
+        <h2>External CSS</h2>
+        <article>
+          <p>The external style sheet is generally used when you want to make changes on multiple pages. It is ideal for this condition because it facilitates you to change the look of the entire web site by changing just one file.<br>
+
+            It uses the "link" tag on every pages and the "link" tag should be put inside the head section.
+            <div>
+            Example:
+            <pre>
+              <b> <script type="text/plain" style="display:block;">
+                <head>  
+                <link rel="stylesheet" type="text/css" href="mystyle.css">  
+                </head> 
+              </script></b></pre></div>
+              The external style sheet may be written in any text editor but must be saved with a .css extension. This file should not contain HTML elements.
+Let's take an example of a style sheet file named "mystyle.css".
+File: mystyle.css
+<div>
+<pre>
+  <b> <script type="text/plain" style="display:block;">body {  
+    background-color: lightblue;  
+}  
+h1 {  
+    color: navy;  
+    margin-left: 20px;  
+}   </script></b></pre></div>
+          </p>
+        </article>
+       </section>
+       <section id="CSS Comments">
+        <h2>CSS Comments</h2>
+        <article>
+          <p>CSS comments are generally written to explain your code. It is very helpful for the users who reads your code so that they can easily understand the code.
+            Comments are ignored by browsers.
+            Comments are single or multiple lines statement and written within /*............*/ .
+            <div class="code-container1">
+              <pre>
+                <b> <script type="text/plain" style="display:block;">
+                  <!DOCTYPE html>  
+                  <html>  
+                  <head>  
+                  <style>  
+                  p {  
+                      color: blue;  
+                      /* This is a single-line comment */  
+                      text-align: center;  
+                  }   
+                  /* This is  
+                  a multi-line  
+                  comment */  
+                  </style>  
+                  </head>  
+                  <body>  
+                  <p>Hello Javatpoint.com</p>  
+                  <p>This statement is styled with CSS.</p>  
+                  <p>CSS comments are ignored by the browsers and not shown in the output.</p>  
+                  </body>  
+                  </html> </script></b></pre>  
+                </p>
+        </article>
+       </section>
+       <section id="CSS Background">
+        <h2>CSS Background</h2>
+        <p>CSS background property is used to define the background effects on element.<br> There are 5 CSS background properties that affects the HTML elements:<br>
+
+         <li>background-color</li>
+         <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+<br>
+       <b>CSS Comments</b>
+       The background-color property is used to specify the background color of the element.
+You can set the background color like this:
+<div class="code-container2">
+  <pre>
+    <b> <script type="text/plain" style="display:block;">
+      <!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+h2,p{  
+    background-color: #b0d4de;  
+}  
+</style>  
+</head>  
+<body>  
+<h2>My first CSS page.</h2>  
+<p>Hello Javatpoint. This is an example of CSS background-color.</p>  
+</body>  
+</html>   
+</script></b></pre>  
+<br>
+Output:
+My first CSS page.
+Hello Javatpoint. This is an example of CSS background-color.<br>
+<br>
+<h3>CSS background-image</h3>
+The background-image property is used to set an image as a background of an element. By default the image covers the entire element. You can set the background image for a page like this.
+<div class="code-container2">
+  <pre>
+    <b> <script type="text/plain" style="display:block;">
+      <!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+background-image: url("paper1.gif");  
+margin-left:100px;  
+}  
+</style>  
+</head>  
+<body>  
+<h1>Hello Javatpoint.com</h1>  
+</body>  
+</html>    
+</p></script></b></pre>
+<br>
+<h3>CSS background-repeat</h3>
+By default, the background-image property repeats the background image horizontally and vertically. Some images are repeated only horizontally or vertically.
+
+The background looks better if the image repeated horizontally only.
+<div class="code-container3">
+  <pre>
+    <b> <script type="text/plain" style="display:block;">
+      !DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+    background-image: url("gradient_bg.png");  
+    background-repeat: repeat-x;  
+}  
+</style>  
+</head>  
+<body>  
+<h1>Hello Javatpoint.com</h1>  
+</body>  
+</html>  
+</script></b></pre>
+<br>
+ <h3>CSS background-attachment</h3>
+ The background-attachment property is used to specify if the background image is fixed or scroll with the rest of the page in browser window. If you set fixed the background image then the image will not move during scrolling in the browser. Let?s take an example with fixed background image.
+ <div class="code-container3">
+  <pre>
+    <b> <script type="text/plain" style="display:block;">
+      background: white url('bbb.gif');  
+background-repeat: no-repeat;  
+background-attachment: fixed; 
+</script></b></pre>
+<br>
+<h3>CSS background-position</h3> 
+The background-position property is used to define the initial position of the background image. By default, the background image is placed on the top-left of the webpage.
+
+You can set the following positions:
+
+1.center
+2.top
+3.bottom
+4.left
+5.right
+<div class="code-container3">
+  <pre>
+    <b> <script type="text/plain" style="display:block;">
+      background: white url('good-morning.jpg');  
+background-repeat: no-repeat;  
+background-attachment: fixed;  
+background-position: center;
+</script></b></pre>
+        </p>
+       </section>
+      <section id="CSS Border">
+        <h2>CSS Border</h2>
+        <p>The CSS border is a shorthand property used to set the border on an element.
+
+          The CSS border properties are use to specify the style, color and size of the border of an element. The CSS border properties are given below
+         <li>
+          border-style</li>
+         <li>border-color</li>
+        <li>border-width</li>
+          <li>border-radius</li>
+      
+          <br>
+         <b> 1-CSS border-style</b>
+          The Border style property is used to specify the border type which you want to display on the web page. <br>
+          
+          There are some border style values which are used with border-style property to define a border.<br>
+          <br>
+         <u> Value	Description</u><br>
+         <li> none - It doesn't define any border.</li>
+         <li> dotted - It is used to define a dotted border.</li>
+          <li>dashed - It is used to define a dashed border.</li>
+         <li> solid - It is used to define a solid border.</li>
+          <li>double -	It defines two borders wIth the same border-width value.</li>
+         <li> groove -	It defines a 3d grooved border. effect is generated according to border-color value.</li>
+         <li> ridge -	It defines a 3d ridged border. effect is generated according to border-color value.</li>
+         <li> inset -	It defines a 3d inset border. effect is generated according to border-color value.</li>
+         <li> outset	- It defines a 3d outset border. effect is generated according to border-color value.</li>
+         <br>
+        <h3> CSS border-width</h3>
+          The border-width property is used to set the border's width. It is set in pixels. You can also use the one of the three pre-defined values, thin, medium or thick to set the width of the border. <br>
+        <br>
+        <h3>CSS border-color</h3>
+        There are three methods to set the color of the border.
+        <li>Name: It specifies the color name. For example: "red".</li>
+        <li>RGB: It specifies the RGB value of the color. For example: "rgb(255,0,0)".</li>
+        <li>Hex: It specifies the hex value of the color. For example: "#ff0000".</li>
+        </p>
+      </section>
+      <section id="CSS border-radius property">
+        <h2>CSS border-radius property</h2>
+        <p>This CSS property sets the rounded borders and provides the rounded corners around an element, tags, or div. It defines the radius of the corners of an element.
+
+          It is shorthand for <b>border top-left-radius, border-top-right-radius, border-bottom-right-radius and border-bottom-left-radius.</b><br>It gives the rounded shape to the corners of the border of an element. We can specify the border for all four corners of the box in a single declaration using the border-radius. The values of this property can be defined in percentage or length units. <br>
+          
+          This CSS property includes the properties that are tabulated as follows: <br>
+          <br>
+         <b><u>Property	Description</u></b>
+          <li>border-top-left-radius -- It is used to set the border-radius for the top-left corner</li>
+          <li>border-top-right-radius --	It is used to set the border-radius for the top-right corner</li>
+          <li>border-bottom-right-radius --	It is used to set the border-radius for the bottom-right corner</li>
+          <li>border-bottom-left-radius --	It is used to set the border-radius for the bottom-left corner</li>
+          <li>If the bottom-left value -- It is omitted, then it will be same as the top-right. If the value of bottom-right is eliminated, then it will be same as the top-left. Similarly, if top-right is eliminated, then it will be the same as top-left.</li> <br>
+          
+          Let's see what happens when we provide a single value, two values, three values, and four values to this property. <br>
+          
+         <li> If we provide a single value (such as border-radius: 30px;) to this property, it will set all corners to the same value.</li>
+          <li>When we specify two values (such as border-radius: 20% 10% ;), then the first value will be used for the top-left and bottom-right corners, and the second value will be used for the top-right and bottom-left corners.</li>
+          <li>When we use three values (such as border-radius: 10% 30% 20%;) then the first value will be used for the top-left corner, the second value will be applied on top-right, and bottom-left corners and the third value will be applied to the bottom-right corner.</li>
+          <li>Similarly, when this property has four values (border-radius: 10% 30% 20% 40%;) then the first value will be the radius of top-left, the second value will be used for the top-right, the third value will be applied on bottom-right, and the fourth value is used for bottom-left.</li>
+         <br>
+          <b>Syntax</b> :
+         <br>
+          border-radius: 1-4 length | %  / 1-4 length | % | inherit | initial;  
+<br>
+          <br>
+         <b>Property values</b> 
+         <b>length:</b>  It defines the shape of the corners. It denotes the size of the radius using length values. Its default value is 0. It does not allow negative values.
+          <br>
+         <b>percentage:</b>  It denotes the size of the radius in percentage. It also does not allow negative values.</p>
+      </section>
+
+    </main>
+  </body>
+</html>
